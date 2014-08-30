@@ -15,7 +15,7 @@ import (
         "fmt"
         "net/http"
 
-        keengo "github.com/philpearl/keengo/goji_middleware"
+        "github.com/philpearl/keengo_goji"
 
         "github.com/zenazn/goji"
         "github.com/zenazn/goji/web"
@@ -26,7 +26,7 @@ func hello(c web.C, w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-        goji.Use(keengo.BuildMiddleWare("mykeenprojectID", "mykeenwritekey","requests", nil)
+        goji.Use(keengo_goji.BuildMiddleWare("mykeenprojectID", "mykeenwritekey","requests", nil)
         goji.Get("/hello/:name", hello)
         goji.Serve()
 }
