@@ -4,6 +4,8 @@ Middleware for [Goji](https://github.com/zenazn/goji) to track HTTP requests and
 
 See the documentation at https://godoc.org/github.com/philpearl/keengo_goji
 
+[![Build Status](https://travis-ci.org/philpearl/keengo_goji.svg)](https://travis-ci.org/philpearl/keengo_goji)
+
 ## Example
 Here's how I use this middleware to track calls to my API.
 
